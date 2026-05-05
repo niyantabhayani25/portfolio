@@ -1,0 +1,120 @@
+/* ============================================================
+   Keyframes
+   ============================================================ */
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@keyframes scrollBob {
+  0%, 100% { transform: translateX(-50%) translateY(0px); }
+  50%       { transform: translateX(-50%) translateY(7px); }
+}
+
+@keyframes pulseGreen {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.55; transform: scale(0.8); }
+}
+
+@keyframes statusIn {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes sidebarIn {
+  from { transform: translateX(-100%); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes panelReveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes splashDots {
+  0%   { content: '.'; }
+  33%  { content: '..'; }
+  66%  { content: '...'; }
+  100% { content: ''; }
+}
+
+/* ============================================================
+   Status bar entrance
+   ============================================================ */
+#status-bar {
+  animation: statusIn 0.4s cubic-bezier(0.16,1,0.3,1) 0.9s both;
+}
+
+/* ============================================================
+   Sidebar entrance (after splash)
+   ============================================================ */
+#sidebar {
+  animation: sidebarIn 0.4s cubic-bezier(0.16,1,0.3,1) 1s both;
+}
+
+/* ============================================================
+   Hero panels entrance
+   ============================================================ */
+.hero-request {
+  animation: panelReveal 0.5s cubic-bezier(0.16,1,0.3,1) 1.1s both;
+}
+.hero-response {
+  animation: panelReveal 0.5s cubic-bezier(0.16,1,0.3,1) 1.25s both;
+}
+.hero-cta {
+  animation: panelReveal 0.5s cubic-bezier(0.16,1,0.3,1) 1.4s both;
+}
+.hero-scroll-hint {
+  animation: panelReveal 0.5s cubic-bezier(0.16,1,0.3,1) 1.6s both,
+             scrollBob 2.2s ease-in-out 2s infinite;
+}
+
+/* ============================================================
+   JSON syntax highlight classes (applied by typing.js)
+   ============================================================ */
+.j-brace  { color: #8b949e; }
+.j-key    { color: #d2a8ff; }
+.j-colon  { color: #8b949e; }
+.j-str    { color: #a5d6ff; }
+.j-num    { color: #79c0ff; }
+.j-bool   { color: #f0883e; }
+.j-null   { color: #8b949e; }
+.j-comma  { color: #8b949e; }
+.j-bullet { color: #3fb950; }
+
+/* ============================================================
+   Hover glow on panels
+   ============================================================ */
+.panel:hover { border-color: #484f58; }
+
+/* ============================================================
+   Commit body transition (height)
+   ============================================================ */
+.commit-body {
+  overflow: hidden;
+}
+
+/* ============================================================
+   Tab panel fade
+   ============================================================ */
+.stack-panel.active {
+  animation: panelReveal 0.25s ease both;
+}
+
+/* ============================================================
+   File explorer expand
+   ============================================================ */
+.fe-body {
+  animation: none;
+}
+.fe-item[data-expanded="true"] .fe-body {
+  animation: panelReveal 0.2s ease both;
+}
+
+/* ============================================================
+   Recognition block expand
+   ============================================================ */
+.rv-block.rv-open .rv-body {
+  animation: panelReveal 0.2s ease both;
+}
