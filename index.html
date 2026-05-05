@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niyanta Bhayani | Backend Engineer & Technical Lead</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23161b22'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='monospace' font-weight='700' font-size='14' fill='%23f0883e'>NB</text></svg>">
+
+  <!-- ═══ Primary SEO ═══════════════════════════════════════ -->
+  <meta name="description" content="Niyanta Bhayani — Associate Technical Lead and Senior PHP & Laravel Backend Engineer with 7+ years of experience. Expert in scalable APIs, AWS cloud infrastructure, and backend systems. Remote-ready. Women Techmakers Ambassador.">
+  <meta name="keywords" content="Niyanta Bhayani, backend engineer, technical lead, PHP developer, Laravel developer, senior software engineer, backend developer India, remote backend engineer, AWS engineer, full stack developer, Node.js developer, MySQL expert, backend developer Surat, Gujarat developer, Women Techmakers Ambassador, API developer, cloud engineer, PHP Laravel AWS">
+  <meta name="author" content="Niyanta Bhayani">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f0883e">
+  <link rel="canonical" href="https://niyantabhayani.github.io/">
+
+  <!-- ═══ Open Graph — LinkedIn & Facebook ═════════════════ -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Niyanta Bhayani | Backend Engineer & Technical Lead">
+  <meta property="og:description" content="Associate Technical Lead with 7+ years in PHP, Laravel, AWS & backend systems. Built enterprise ERP, HRM, e-commerce, and education platforms. Remote-ready. Women Techmakers Ambassador.">
+  <meta property="og:url" content="https://niyantabhayani.github.io/">
+  <meta property="og:site_name" content="Niyanta Bhayani — Portfolio">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:image" content="https://niyantabhayani.github.io/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta property="og:image:alt" content="Niyanta Bhayani — Backend Engineer & Technical Lead">
+  <meta property="profile:first_name" content="Niyanta">
+  <meta property="profile:last_name" content="Bhayani">
+  <meta property="profile:username" content="niyanta-bhayani">
+
+  <!-- ═══ Twitter Card ══════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Niyanta Bhayani | Backend Engineer & Technical Lead">
+  <meta name="twitter:description" content="Associate Technical Lead · PHP · Laravel · AWS · 7+ years building scalable backend systems. Remote-ready.">
+  <meta name="twitter:image" content="https://niyantabhayani.github.io/og-image.jpg">
+
+  <!-- ═══ JSON-LD Structured Data (Google Rich Results) ════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Niyanta Bhayani",
+    "url": "https://niyantabhayani.github.io/",
+    "image": "https://niyantabhayani.github.io/og-image.jpg",
+    "email": "niyapatel988@gmail.com",
+    "jobTitle": "Associate Technical Lead",
+    "description": "Senior PHP & Laravel Backend Engineer with 7+ years of experience in scalable APIs, cloud infrastructure, and enterprise systems. Women Techmakers Ambassador.",
+    "sameAs": [
+      "https://www.linkedin.com/in/niyanta-bhayani-379961167"
+    ],
+    "knowsAbout": [
+      "PHP", "Laravel", "Backend Development", "AWS", "MySQL",
+      "Redis", "Docker", "Node.js", "MongoDB", "REST APIs",
+      "Microservices", "System Architecture", "Technical Leadership"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Gujarat Technological University",
+      "sameAs": "https://www.gtu.ac.in"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Squareboat",
+      "sameAs": "https://squareboat.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Surat",
+      "addressRegion": "Gujarat",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash">
+    <div class="splash-content">
+      <span class="splash-prefix">$</span>
+      <span class="splash-text">connecting to server</span>
+      <span class="splash-dots">...</span>
+      <span class="splash-status" id="splash-status"></span>
+    </div>
+  </div>
+
+  <!-- Sidebar Navigation -->
+  <nav id="sidebar">
+    <div class="nav-brand">NB</div>
+    <ul class="nav-items">
+      <li>
+        <a href="#home" class="nav-item active" data-section="home" title="Home">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#about" class="nav-item" data-section="about" title="About">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#stack" class="nav-item" data-section="stack" title="Stack">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#experience" class="nav-item" data-section="experience" title="Experience">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#domains" class="nav-item" data-section="domains" title="Domains">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#recognition" class="nav-item" data-section="recognition" title="Recognition">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="nav-item" data-section="contact" title="Contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- ======================================================
+         HERO — GET /developer
+    ====================================================== -->
+    <section id="home" class="section section-hero">
+      <div class="hero-grid-bg"></div>
+
+      <div class="hero-inner">
+        <!-- Request Panel -->
+        <div class="panel hero-request">
+          <div class="panel-header">
+            <span class="panel-dot red"></span>
+            <span class="panel-dot yellow"></span>
+            <span class="panel-dot green"></span>
+            <span class="panel-title">request.http</span>
+          </div>
+          <div class="panel-body">
+            <div class="http-line">
+              <span class="http-method">GET</span>
+              <span class="http-path"> /developer </span>
+              <span class="http-version">HTTP/1.1</span>
+            </div>
+            <div class="http-headers">
+              <div class="http-header"><span class="header-key">Host:</span> <span class="header-val">niyanta.bhayani</span></div>
+              <div class="http-header"><span class="header-key">Accept:</span> <span class="header-val">application/json</span></div>
+              <div class="http-header"><span class="header-key">X-Looking-For:</span> <span class="header-val">backend-lead</span></div>
+              <div class="http-header"><span class="header-key">X-Open-To:</span> <span class="header-val">remote</span></div>
+              <div class="http-header"><span class="header-key">Authorization:</span> <span class="header-val">Bearer 7yrs-experience</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Response Panel -->
+        <div class="panel hero-response">
+          <div class="panel-header">
+            <span class="panel-dot red"></span>
+            <span class="panel-dot yellow"></span>
+            <span class="panel-dot green"></span>
+            <span class="panel-title">response.json</span>
+            <span class="status-badge ok">200 OK</span>
+          </div>
+          <div class="panel-body">
+            <pre class="json-response" id="json-output"><span class="json-cursor" id="json-cursor">▋</span></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="hero-cta">
+        <a href="Niyanta_Bhayani_laravel_PHP_new.pdf" class="btn-cmd" target="_blank">
+          <span class="cmd-prompt">$</span> view_resume
+        </a>
+        <a href="#contact" class="btn-cmd btn-cmd-accent scroll-link">
+          <span class="cmd-prompt">$</span> contact_me
+        </a>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19,12 12,19 5,12"/></svg>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         ABOUT — // about.php
+    ====================================================== -->
+    <section id="about" class="section reveal">
+      <div class="section-label">// about.php</div>
+
+      <div class="about-grid">
+        <!-- Photo -->
+        <div class="about-photo-col">
+          <div class="photo-window">
+            <div class="photo-titlebar">
+              <span class="panel-dot red"></span>
+              <span class="panel-dot yellow"></span>
+              <span class="panel-dot green"></span>
+              <span class="photo-filename">niyanta.jpg</span>
+            </div>
+            <div class="photo-placeholder">
+              <div class="photo-avatar">NB</div>
+              <div class="photo-hint">Replace with your photo</div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="meta-row"><span class="meta-key">role:</span> <span class="meta-val">"Associate Technical Lead"</span></div>
+            <div class="meta-row"><span class="meta-key">type:</span> <span class="meta-val">"backend_engineer"</span></div>
+            <div class="meta-row"><span class="meta-key">remote:</span> <span class="meta-bool">true</span></div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-content">
+          <div class="comment-block">
+            <span class="comment-open">/**</span>
+            <p>Results-driven Senior Software Engineer with 7+ years building scalable enterprise applications. My primary strength lies in backend engineering — designing robust APIs, optimizing databases, and ensuring system reliability using PHP, Laravel, MySQL, Redis, and AWS.</p>
+            <p>I've led cross-functional teams, mentored junior engineers, and modernized legacy PHP systems without disrupting live business workflows. From HRM platforms to e-commerce backends to LinkedIn-style networks, I build systems that just work.</p>
+            <p>As a <span class="highlight">Women Techmakers Ambassador</span>, I actively organize workshops and learning initiatives, empowering engineers to grow and step outside their comfort zones.</p>
+            <span class="comment-close"> */</span>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-arrow">▲</div>
+              <div class="stat-number" data-target="7" data-suffix="+">0+</div>
+              <div class="stat-label">years active</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-arrow">▲</div>
+              <div class="stat-number" data-target="50" data-suffix="+">0+</div>
+              <div class="stat-label">students mentored</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-arrow">▲</div>
+              <div class="stat-number" data-target="99" data-suffix="%">0%</div>
+              <div class="stat-label">uptime achieved</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-arrow">▲</div>
+              <div class="stat-number" data-target="40" data-suffix="%">0%</div>
+              <div class="stat-label">perf boost delivered</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         STACK — // composer.json
+    ====================================================== -->
+    <section id="stack" class="section reveal">
+      <div class="section-label">// composer.json</div>
+
+      <div class="stack-tabs">
+        <button class="stack-tab active" data-tab="require">require</button>
+        <button class="stack-tab" data-tab="cloud">cloud</button>
+        <button class="stack-tab" data-tab="frontend">frontend</button>
+        <button class="stack-tab" data-tab="tools">tools</button>
+      </div>
+
+      <div class="stack-viewer">
+        <div class="jv-line jv-brace">{</div>
+
+        <!-- require -->
+        <div class="stack-panel active" id="tab-require">
+          <div class="jv-indent">
+            <div class="jv-line"><span class="jv-key">"require"</span><span class="jv-punct">: {</span></div>
+            <div class="jv-items">
+              <div class="jv-item" data-tip="Primary stack · Squareboat, Narola, IBL INFOTECH">
+                <span class="jv-pkg">"php/laravel"</span><span class="jv-punct">: </span><span class="jv-ver">"^10.0"</span><span class="jv-comma">,</span>
+                <span class="tech-primary">primary</span>
+              </div>
+              <div class="jv-item" data-tip="Lumen, Symfony, CodeIgniter · Legacy modernization">
+                <span class="jv-pkg">"php/core"</span><span class="jv-punct">: </span><span class="jv-ver">"^8.2"</span><span class="jv-comma">,</span>
+                <span class="tech-primary">primary</span>
+              </div>
+              <div class="jv-item" data-tip="Enterprise APIs · Narola Infotech">
+                <span class="jv-pkg">"node/express"</span><span class="jv-punct">: </span><span class="jv-ver">"^4.18"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Primary DB across all roles · 7+ years">
+                <span class="jv-pkg">"database/mysql"</span><span class="jv-punct">: </span><span class="jv-ver">"^8.0"</span><span class="jv-comma">,</span>
+                <span class="tech-primary">primary</span>
+              </div>
+              <div class="jv-item" data-tip="Caching, session management · Squareboat">
+                <span class="jv-pkg">"database/redis"</span><span class="jv-punct">: </span><span class="jv-ver">"^7.0"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Node.js projects · Narola Infotech">
+                <span class="jv-pkg">"database/mongodb"</span><span class="jv-punct">: </span><span class="jv-ver">"^6.0"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Search and analytics · Squareboat">
+                <span class="jv-pkg">"search/elasticsearch"</span><span class="jv-punct">: </span><span class="jv-ver">"^8.0"</span>
+              </div>
+            </div>
+            <div class="jv-line jv-punct">},</div>
+          </div>
+        </div>
+
+        <!-- cloud -->
+        <div class="stack-panel" id="tab-cloud">
+          <div class="jv-indent">
+            <div class="jv-line"><span class="jv-key">"cloud"</span><span class="jv-punct">: {</span></div>
+            <div class="jv-items">
+              <div class="jv-item" data-tip="EC2, S3, Lambda · Production infrastructure">
+                <span class="jv-pkg">"aws/ec2-s3-lambda"</span><span class="jv-punct">: </span><span class="jv-ver">"*"</span><span class="jv-comma">,</span>
+                <span class="tech-primary">primary</span>
+              </div>
+              <div class="jv-item" data-tip="Containerized deployments · Squareboat">
+                <span class="jv-pkg">"infra/docker"</span><span class="jv-punct">: </span><span class="jv-ver">"^24.0"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Auth, Realtime DB, Cloud Messaging">
+                <span class="jv-pkg">"google/firebase"</span><span class="jv-punct">: </span><span class="jv-ver">"^10.0"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="GCP for specific cloud projects">
+                <span class="jv-pkg">"google/cloud-platform"</span><span class="jv-punct">: </span><span class="jv-ver">"*"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Automated build and deploy pipelines">
+                <span class="jv-pkg">"devops/ci-cd-pipelines"</span><span class="jv-punct">: </span><span class="jv-ver">"*"</span>
+              </div>
+            </div>
+            <div class="jv-line jv-punct">},</div>
+          </div>
+        </div>
+
+        <!-- frontend -->
+        <div class="stack-panel" id="tab-frontend">
+          <div class="jv-indent">
+            <div class="jv-line"><span class="jv-key">"frontend"</span><span class="jv-punct">: {</span></div>
+            <div class="jv-items">
+              <div class="jv-item" data-tip="Vanilla JS, jQuery · All projects">
+                <span class="jv-pkg">"javascript/vanilla"</span><span class="jv-punct">: </span><span class="jv-ver">"^ES2022"</span><span class="jv-comma">,</span>
+                <span class="tech-primary">proficient</span>
+              </div>
+              <div class="jv-item" data-tip="Interactive frontends and SPAs">
+                <span class="jv-pkg">"ui/react"</span><span class="jv-punct">: </span><span class="jv-ver">"^18.0"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Admin panels and dashboards">
+                <span class="jv-pkg">"ui/vue"</span><span class="jv-punct">: </span><span class="jv-ver">"^3.0"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Laravel Blade, server-side views · Squareboat">
+                <span class="jv-pkg">"ui/bootstrap"</span><span class="jv-punct">: </span><span class="jv-ver">"^5.0"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Chatbot frontend integrated with Dialogflow CX · Squareboat">
+                <span class="jv-pkg">"ai/dialogflow-cx"</span><span class="jv-punct">: </span><span class="jv-ver">"*"</span>
+              </div>
+            </div>
+            <div class="jv-line jv-punct">},</div>
+          </div>
+        </div>
+
+        <!-- tools -->
+        <div class="stack-panel" id="tab-tools">
+          <div class="jv-indent">
+            <div class="jv-line"><span class="jv-key">"tools"</span><span class="jv-punct">: {</span></div>
+            <div class="jv-items">
+              <div class="jv-item" data-tip="Git workflows, branching strategies · 30% fewer merge conflicts">
+                <span class="jv-pkg">"vcs/git-github"</span><span class="jv-punct">: </span><span class="jv-ver">"*"</span><span class="jv-comma">,</span>
+                <span class="tech-primary">primary</span>
+              </div>
+              <div class="jv-item" data-tip="Stripe, PayPal, Razorpay · Secure webhooks">
+                <span class="jv-pkg">"integrations/payments"</span><span class="jv-punct">: </span><span class="jv-ver">"*"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Maps, Analytics, Authentication APIs">
+                <span class="jv-pkg">"integrations/google-apis"</span><span class="jv-punct">: </span><span class="jv-ver">"*"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Sprint planning, daily standups, retrospectives">
+                <span class="jv-pkg">"workflow/agile-scrum"</span><span class="jv-punct">: </span><span class="jv-ver">"*"</span><span class="jv-comma">,</span>
+              </div>
+              <div class="jv-item" data-tip="Scripting and automation">
+                <span class="jv-pkg">"lang/python"</span><span class="jv-punct">: </span><span class="jv-ver">"^3.10"</span>
+              </div>
+            </div>
+            <div class="jv-line jv-punct">}</div>
+          </div>
+        </div>
+
+        <div class="jv-line jv-brace">}</div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         EXPERIENCE — $ git log
+    ====================================================== -->
+    <section id="experience" class="section reveal">
+      <div class="section-label">$ git log --all --oneline --graph</div>
+
+      <div class="git-log">
+        <div class="git-branch-line"></div>
+
+        <div class="git-commit" data-expanded="false">
+          <div class="commit-header">
+            <div class="commit-left">
+              <span class="commit-dot dot-head"></span>
+              <span class="commit-hash">f3a91c2</span>
+              <span class="commit-ref">(HEAD → squareboat)</span>
+              <span class="commit-msg">Associate Technical Lead</span>
+            </div>
+            <span class="commit-date">Apr 2025 – Feb 2026</span>
+          </div>
+          <div class="commit-body">
+            <div class="diff-line diff-add">Spearheaded technical leadership across multiple high-priority projects</div>
+            <div class="diff-line diff-add">Owned and modernized legacy PHP systems with zero business disruption</div>
+            <div class="diff-line diff-add">Built Dialogflow CX chatbot frontend with custom backend API integrations</div>
+            <div class="diff-line diff-add">Drove technology stack selection and infrastructure design decisions</div>
+            <div class="diff-line diff-add">Mentored engineers via code reviews, architecture sessions, 1:1s</div>
+            <div class="diff-line diff-add">Managed AWS deployments, monitoring, and live incident resolution</div>
+            <div class="diff-meta">@ Squareboat, Gurugram — Remote</div>
+          </div>
+        </div>
+
+        <div class="git-commit" data-expanded="false">
+          <div class="commit-header">
+            <div class="commit-left">
+              <span class="commit-dot"></span>
+              <span class="commit-hash">f1b82a1</span>
+              <span class="commit-msg">Senior Software Engineer</span>
+            </div>
+            <span class="commit-date">Jun 2023 – Apr 2025</span>
+          </div>
+          <div class="commit-body">
+            <div class="diff-line diff-add">Architected backend solutions serving thousands of concurrent users (99% uptime)</div>
+            <div class="diff-line diff-add">Managed end-to-end AWS infrastructure: EC2, S3, Docker, Firebase</div>
+            <div class="diff-line diff-add">Designed Git workflows → 30% reduction in merge conflicts team-wide</div>
+            <div class="diff-line diff-add">Implemented security hardening, performance optimization, monitoring</div>
+            <div class="diff-line diff-add">Ran code review workshops, pair programming, knowledge transfer sessions</div>
+            <div class="diff-meta">@ Squareboat, Gurugram — Remote</div>
+          </div>
+        </div>
+
+        <div class="git-commit" data-expanded="false">
+          <div class="commit-header">
+            <div class="commit-left">
+              <span class="commit-dot"></span>
+              <span class="commit-hash">2c4d831</span>
+              <span class="commit-msg">Technical Specialist – Full Stack Development</span>
+            </div>
+            <span class="commit-date">Jan 2023 – May 2023</span>
+          </div>
+          <div class="commit-body">
+            <div class="diff-line diff-add">Designed and delivered full stack curriculum: HTML5, ReactJS, Node.js, MongoDB</div>
+            <div class="diff-line diff-add">Mentored 50+ students → 85% job placement rate</div>
+            <div class="diff-line diff-add">Conducted mock interviews, resume reviews, soft skills training</div>
+            <div class="diff-line diff-add">Led capstone projects in e-commerce and education tech domains</div>
+            <div class="diff-meta">@ Tata STRIVE, Navsari, Gujarat</div>
+          </div>
+        </div>
+
+        <div class="git-commit" data-expanded="false">
+          <div class="commit-header">
+            <div class="commit-left">
+              <span class="commit-dot"></span>
+              <span class="commit-hash">9e1f220</span>
+              <span class="commit-msg">Senior Software Engineer</span>
+            </div>
+            <span class="commit-date">Mar 2022 – Dec 2022</span>
+          </div>
+          <div class="commit-body">
+            <div class="diff-line diff-add">Led Node.js, Express.js, MongoDB development for enterprise clients</div>
+            <div class="diff-line diff-add">Built LinkedIn-style professional networking platform from the ground up</div>
+            <div class="diff-line diff-add">40% API response improvement + 50% server load reduction via caching</div>
+            <div class="diff-line diff-add">Developed comprehensive HRM: payroll, attendance, leave, performance</div>
+            <div class="diff-line diff-add">Built LMS and student portals for educational institutions</div>
+            <div class="diff-meta">@ Narola Infotech, Surat, Gujarat</div>
+          </div>
+        </div>
+
+        <div class="git-commit" data-expanded="false">
+          <div class="commit-header">
+            <div class="commit-left">
+              <span class="commit-dot"></span>
+              <span class="commit-hash">4b7c913</span>
+              <span class="commit-msg">Software Engineer</span>
+            </div>
+            <span class="commit-date">Mar 2021 – Feb 2022</span>
+          </div>
+          <div class="commit-body">
+            <div class="diff-line diff-add">Built Laravel, CodeIgniter web applications across diverse business domains</div>
+            <div class="diff-line diff-add">Integrated Stripe, PayPal, Razorpay with secure webhook handling</div>
+            <div class="diff-line diff-add">AWS services: S3, EC2, Lambda · Firebase: Auth, Realtime DB, Messaging</div>
+            <div class="diff-line diff-add">Google APIs: Maps, Analytics, OAuth Authentication</div>
+            <div class="diff-meta">@ Narola Infotech, Surat, Gujarat</div>
+          </div>
+        </div>
+
+        <div class="git-commit" data-expanded="false">
+          <div class="commit-header">
+            <div class="commit-left">
+              <span class="commit-dot"></span>
+              <span class="commit-hash">1a2d504</span>
+              <span class="commit-msg">Assistant Developer</span>
+            </div>
+            <span class="commit-date">Feb 2019 – Feb 2021</span>
+          </div>
+          <div class="commit-body">
+            <div class="diff-line diff-add">Led team of 4 developers — task allocation, quality assurance, delivery</div>
+            <div class="diff-line diff-add">End-to-end client communication, requirement gathering, demos</div>
+            <div class="diff-line diff-add">Built RESTful APIs with proper auth, documentation, mobile support</div>
+            <div class="diff-line diff-add">Functional, integration, and UAT testing before every production deploy</div>
+            <div class="diff-meta">@ IBL INFOTECH, Surat, Gujarat</div>
+          </div>
+        </div>
+
+        <div class="git-commit" data-expanded="false">
+          <div class="commit-header">
+            <div class="commit-left">
+              <span class="commit-dot dot-tail"></span>
+              <span class="commit-hash">8f0e112</span>
+              <span class="commit-msg">Software Development Intern</span>
+            </div>
+            <span class="commit-date">Aug 2018 – Jan 2019</span>
+          </div>
+          <div class="commit-body">
+            <div class="diff-line diff-add">Gained foundational web development experience under senior mentorship</div>
+            <div class="diff-line diff-add">Contributed to live client projects, learned professional coding standards</div>
+            <div class="diff-meta">@ Knovator, Surat, Gujarat</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================
+         DOMAINS — $ ls -la
+    ====================================================== -->
+    <section id="domains" class="section reveal">
+      <div class="section-label">$ ls -la /experience/domains</div>
+
+      <div class="file-explorer">
+        <div class="fe-header-row">
+          <span class="fe-col-perm">permissions</span>
+          <span class="fe-col-name">name</span>
+          <span class="fe-col-hint">click to expand</span>
+        </div>
+
+        <div class="fe-item" data-expanded="false">
+          <div class="fe-row">
+            <span class="fe-perms">drwxr-xr-x</span>
+            <span class="fe-icon">📁</span>
+            <span class="fe-name">ERP-CRM-Systems/</span>
+            <span class="fe-chevron">›</span>
+          </div>
+          <div class="fe-body">
+            <div class="fe-entry"><span class="fe-prompt">›</span> Built scalable ERP systems for enterprise clients from scratch</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> CRM integrations with third-party services and automation pipelines</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> Legacy PHP modernization — zero business disruption</div>
+            <div class="fe-tags"><span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">AWS</span><span class="tag">Docker</span></div>
+          </div>
+        </div>
+
+        <div class="fe-item" data-expanded="false">
+          <div class="fe-row">
+            <span class="fe-perms">drwxr-xr-x</span>
+            <span class="fe-icon">📁</span>
+            <span class="fe-name">E-Commerce-Platforms/</span>
+            <span class="fe-chevron">›</span>
+          </div>
+          <div class="fe-body">
+            <div class="fe-entry"><span class="fe-prompt">›</span> Full-stack e-commerce with payment gateway integrations</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> Stripe, PayPal, Razorpay with secure webhooks and fraud checks</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> High availability architecture for peak traffic handling</div>
+            <div class="fe-tags"><span class="tag">Laravel</span><span class="tag">Stripe</span><span class="tag">Redis</span><span class="tag">MySQL</span></div>
+          </div>
+        </div>
+
+        <div class="fe-item" data-expanded="false">
+          <div class="fe-row">
+            <span class="fe-perms">drwxr-xr-x</span>
+            <span class="fe-icon">📁</span>
+            <span class="fe-name">HRM-Solutions/</span>
+            <span class="fe-chevron">›</span>
+          </div>
+          <div class="fe-body">
+            <div class="fe-entry"><span class="fe-prompt">›</span> Payroll processing, attendance tracking, leave management</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> Performance evaluation and employee onboarding workflows</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> Multi-role RBAC and full audit logging</div>
+            <div class="fe-tags"><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Express</span></div>
+          </div>
+        </div>
+
+        <div class="fe-item" data-expanded="false">
+          <div class="fe-row">
+            <span class="fe-perms">drwxr-xr-x</span>
+            <span class="fe-icon">📁</span>
+            <span class="fe-name">Education-Technology/</span>
+            <span class="fe-chevron">›</span>
+          </div>
+          <div class="fe-body">
+            <div class="fe-entry"><span class="fe-prompt">›</span> Learning management systems and student portals</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> 40% API response improvement via query optimization and caching</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> Content delivery platforms for educational institutions</div>
+            <div class="fe-tags"><span class="tag">Node.js</span><span class="tag">Elasticsearch</span><span class="tag">Redis</span><span class="tag">MongoDB</span></div>
+          </div>
+        </div>
+
+        <div class="fe-item" data-expanded="false">
+          <div class="fe-row">
+            <span class="fe-perms">drwxr-xr-x</span>
+            <span class="fe-icon">📁</span>
+            <span class="fe-name">Professional-Networking/</span>
+            <span class="fe-chevron">›</span>
+          </div>
+          <div class="fe-body">
+            <div class="fe-entry"><span class="fe-prompt">›</span> LinkedIn-style platform with real-time messaging</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> User profiles, connection graph, content sharing, advanced search</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> Scalable architecture serving thousands of concurrent users</div>
+            <div class="fe-tags"><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Elasticsearch</span><span class="tag">Socket.io</span></div>
+          </div>
+        </div>
+
+        <div class="fe-item" data-expanded="false">
+          <div class="fe-row">
+            <span class="fe-perms">drwxr-xr-x</span>
+            <span class="fe-icon">📁</span>
+            <span class="fe-name">Health-Fitness-Apps/</span>
+            <span class="fe-chevron">›</span>
+          </div>
+          <div class="fe-body">
+            <div class="fe-entry"><span class="fe-prompt">›</span> Backend APIs for mobile health and fitness applications</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> Firebase integration for real-time data and push notifications</div>
+            <div class="fe-entry"><span class="fe-prompt">›</span> Secure user data handling with compliance requirements</div>
+            <div class="fe-tags"><span class="tag">Laravel</span><span class="tag">Firebase</span><span class="tag">MySQL</span><span class="tag">AWS</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         RECOGNITION — // verified.json
+    ====================================================== -->
+    <section id="recognition" class="section reveal">
+      <div class="section-label">// verified.json</div>
+
+      <div class="recognition-viewer">
+        <div class="rv-brace">{</div>
+
+        <div class="rv-block rv-open" id="rv-ambassador">
+          <div class="rv-header" data-target="rv-ambassador">
+            <span class="rv-toggle">▼</span>
+            <span class="jv-key">"ambassador"</span>
+            <span class="jv-punct">: </span>
+            <span class="jv-str">"Women Techmakers (Google)"</span>
+            <span class="verified-badge">✓ Verified</span>
+          </div>
+          <div class="rv-body">
+            <p class="rv-desc">Recognized for contributions to diversity in technology and community leadership. Actively organize technical workshops and learning initiatives, empowering engineers to grow beyond their comfort zones.</p>
+          </div>
+        </div>
+
+        <div class="rv-block rv-open" id="rv-awards">
+          <div class="rv-header" data-target="rv-awards">
+            <span class="rv-toggle">▼</span>
+            <span class="jv-key">"awards"</span>
+            <span class="jv-punct">: [</span>
+          </div>
+          <div class="rv-body">
+            <div class="rv-award"><span class="rv-bullet">●</span><span class="jv-str">"Excellent Performer of the Year"</span><span class="rv-note">× 2 — Outstanding technical contributions and delivery</span></div>
+            <div class="rv-award"><span class="rv-bullet">●</span><span class="jv-str">"Volleyball Player"</span><span class="rv-note">— Teamwork, leadership, competitive excellence</span></div>
+          </div>
+          <div class="rv-close">],</div>
+        </div>
+
+        <div class="rv-block rv-open" id="rv-community">
+          <div class="rv-header" data-target="rv-community">
+            <span class="rv-toggle">▼</span>
+            <span class="jv-key">"community"</span>
+            <span class="jv-punct">: [</span>
+          </div>
+          <div class="rv-body">
+            <div class="rv-award"><span class="rv-bullet">●</span><span class="jv-str">"Organizes technical workshops and mentoring sessions"</span></div>
+            <div class="rv-award"><span class="rv-bullet">●</span><span class="jv-str">"Mentored 50+ engineers to industry-ready standards"</span></div>
+            <div class="rv-award"><span class="rv-bullet">●</span><span class="jv-str">"Knowledge sharing: AWS · PHP · Web Technologies · Cloud Computing"</span></div>
+            <div class="rv-award"><span class="rv-bullet">●</span><span class="jv-str">"Advocate for personal development and collaborative problem-solving"</span></div>
+          </div>
+          <div class="rv-close">],</div>
+        </div>
+
+        <div class="rv-block rv-open" id="rv-education">
+          <div class="rv-header" data-target="rv-education">
+            <span class="rv-toggle">▼</span>
+            <span class="jv-key">"education"</span>
+            <span class="jv-punct">: {</span>
+          </div>
+          <div class="rv-body">
+            <div class="edu-card">
+              <div class="edu-degree">B.E. Information Technology</div>
+              <div class="edu-uni">Gujarat Technological University (GTU)</div>
+              <div class="edu-detail">Graduated with Distinction · Data Structures · Algorithms · DBMS · Software Engineering</div>
+            </div>
+          </div>
+          <div class="rv-close">}</div>
+        </div>
+
+        <div class="rv-brace">}</div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CONTACT — POST /connect
+    ====================================================== -->
+    <section id="contact" class="section reveal">
+      <div class="section-label">// POST /connect</div>
+
+      <div class="contact-grid">
+        <!-- Form Panel -->
+        <div class="panel contact-panel">
+          <div class="panel-header">
+            <span class="panel-dot red"></span>
+            <span class="panel-dot yellow"></span>
+            <span class="panel-dot green"></span>
+            <span class="panel-title">new_request.json</span>
+            <span class="method-badge">POST</span>
+            <span class="endpoint-label">/connect</span>
+          </div>
+          <div class="panel-body">
+            <div data-fs-error class="fs-form-error"></div>
+            <form id="contact-form" action="https://formspree.io/f/meengpej" method="POST">
+              <div class="form-field">
+                <label class="form-label"><span class="jv-key">"name"</span><span class="form-colon">:</span></label>
+                <input type="text" name="name" class="form-input" placeholder='"Your full name"' required autocomplete="off" data-fs-field>
+                <span data-fs-error="name" class="fs-field-error"></span>
+              </div>
+              <div class="form-field">
+                <label class="form-label"><span class="jv-key">"email"</span><span class="form-colon">:</span></label>
+                <input type="email" name="email" class="form-input" placeholder='"your@email.com"' required autocomplete="off" data-fs-field>
+                <span data-fs-error="email" class="fs-field-error"></span>
+              </div>
+              <div class="form-field">
+                <label class="form-label"><span class="jv-key">"subject"</span><span class="form-colon">:</span></label>
+                <input type="text" name="subject" class="form-input" placeholder='"What is this about?"' required autocomplete="off" data-fs-field>
+                <span data-fs-error="subject" class="fs-field-error"></span>
+              </div>
+              <div class="form-field">
+                <label class="form-label"><span class="jv-key">"message"</span><span class="form-colon">:</span></label>
+                <textarea name="message" class="form-input form-textarea" placeholder='"What are you building?"' required data-fs-field></textarea>
+                <span data-fs-error="message" class="fs-field-error"></span>
+              </div>
+              <button type="submit" class="btn-submit" data-fs-submit-btn>
+                <span class="submit-icon">▶</span> Send Request
+              </button>
+            </form>
+            <div data-fs-success class="form-success" id="form-success">
+              <div class="success-status"><span class="status-badge ok">201 Created</span></div>
+              <div class="success-msg">Message delivered successfully.</div>
+              <div class="success-json">{ "queued": true, "response_time": "&lt; 24h" }</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="contact-links">
+          <div class="contact-links-label">// social_links.sh</div>
+
+          <div class="curl-row">
+            <span class="curl-cmd">curl</span>
+            <a href="mailto:niyapatel988@gmail.com" class="curl-val">niyapatel988@gmail.com</a>
+          </div>
+          <div class="curl-row">
+            <span class="curl-cmd">open</span>
+            <a href="https://linkedin.com/in/niyanta-bhayani-379961167" target="_blank" rel="noopener" class="curl-val">linkedin/niyanta-bhayani</a>
+          </div>
+          <div class="avail-card">
+            <span class="avail-dot"></span>
+            <div>
+              <div class="avail-title">Available for remote opportunities</div>
+              <div class="avail-sub">Backend · Full-Stack · Technical Lead roles</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Status Bar -->
+  <div id="status-bar">
+    <div class="sb-left">
+      <span class="sb-online"></span>
+      <span>Niyanta Bhayani</span>
+    </div>
+    <div class="sb-center" id="sb-section">home</div>
+    <div class="sb-right">
+      <span>Backend Engineer</span>
+      <span class="sb-sep">|</span>
+      <span>Remote-Ready</span>
+      <span class="sb-sep">|</span>
+      <span>PHP · Laravel · AWS</span>
+    </div>
+  </div>
+
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contact-form', formId: 'meengpej' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+  <script src="js/typing.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
