@@ -556,7 +556,7 @@ button { font-family: inherit; }
 .jv-item[data-tip]:hover::after { opacity: 1; }
 
 /* ============================================================
-   Experience (Git Log)
+   Experience (Git Graph)
    ============================================================ */
 .git-log {
   position: relative;
@@ -566,20 +566,44 @@ button { font-family: inherit; }
 
 .git-branch-line {
   position: absolute;
-  left: 124px;
-  top: 18px; bottom: 18px;
+  left: 16px;
+  top: 12px; bottom: 12px;
   width: 2px;
-  background: linear-gradient(to bottom, var(--accent) 0%, var(--border) 100%);
-  border-radius: 1px;
+  background: var(--blue);
+  border-radius: 2px;
+  z-index: 0;
 }
 
 .git-commit { position: relative; cursor: pointer; }
+
+.commit-dot {
+  position: absolute;
+  left: 9px;
+  top: 11px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2.5px solid var(--bg);
+  z-index: 2;
+  box-shadow: 0 0 0 2px var(--accent);
+  transition: box-shadow 0.15s;
+}
+.dot-head {
+  background: var(--blue);
+  box-shadow: 0 0 0 2px var(--blue), 0 0 10px rgba(88,166,255,0.45);
+}
+.dot-tail {
+  background: var(--border-h);
+  box-shadow: 0 0 0 2px var(--border-h);
+}
+.git-commit:hover .commit-dot { box-shadow: 0 0 0 2px var(--accent), 0 0 8px var(--accent-g); }
+.git-commit:hover .dot-head   { box-shadow: 0 0 0 2px var(--blue), 0 0 12px rgba(88,166,255,0.6); }
 
 .commit-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 11px 8px;
+  padding: 10px 8px 10px 40px;
   border-radius: 6px;
   transition: background 0.15s;
 }
@@ -588,29 +612,31 @@ button { font-family: inherit; }
 .commit-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-family: var(--mono);
   font-size: 12px;
+  flex: 1;
+  min-width: 0;
 }
 
-.commit-dot {
-  width: 13px; height: 13px;
-  border-radius: 50%;
-  background: var(--bg-2);
-  border: 2px solid var(--border);
+.commit-hash { color: var(--yellow); min-width: 58px; flex-shrink: 0; }
+.commit-ref {
+  color: var(--blue);
+  font-size: 10px;
+  background: rgba(88,166,255,0.12);
+  border: 1px solid rgba(88,166,255,0.35);
+  padding: 1px 7px;
+  border-radius: 10px;
+  white-space: nowrap;
   flex-shrink: 0;
-  margin-left: 118px;
-  z-index: 2;
-  position: relative;
-  transition: border-color 0.15s;
 }
-.dot-head { border-color: var(--accent); background: var(--accent); box-shadow: 0 0 10px var(--accent-g); }
-.dot-tail { border-color: var(--muted); }
-.git-commit:hover .commit-dot { border-color: var(--accent); }
-
-.commit-hash { color: var(--yellow); min-width: 58px; }
-.commit-ref  { color: var(--accent); font-size: 10px; }
-.commit-msg  { color: var(--text); font-size: 13px; }
+.commit-company {
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.commit-msg { color: var(--text); font-size: 13px; }
 
 .commit-date {
   font-family: var(--mono);
@@ -618,12 +644,13 @@ button { font-family: inherit; }
   color: var(--muted);
   white-space: nowrap;
   padding-right: 4px;
+  flex-shrink: 0;
 }
 
 /* Diff body */
 .commit-body {
   display: none;
-  padding: 4px 8px 14px 165px;
+  padding: 4px 8px 14px 40px;
   font-family: var(--mono);
   font-size: 12px;
 }
@@ -1082,9 +1109,6 @@ button { font-family: inherit; }
 
   .hero-cta { flex-wrap: wrap; }
 
-  .git-branch-line { left: 70px; }
-  .commit-dot { margin-left: 64px; }
-  .commit-body { padding-left: 98px; }
   .commit-hash { min-width: 0; }
 
   .fe-perms  { display: none; }
@@ -1098,6 +1122,6 @@ button { font-family: inherit; }
 
 @media (max-width: 480px) {
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .commit-ref { display: none; }
-  .commit-body { padding-left: 80px; }
+  .commit-ref     { display: none; }
+  .commit-company { display: none; }
 }

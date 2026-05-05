@@ -12,11 +12,11 @@
     ['  ', 'j-brace'],   ['"role"', 'j-key'],      [':', 'j-colon'],    [' "Associate Technical Lead"', 'j-str'],  [',', 'j-comma'],
     ['  ', 'j-brace'],   ['"status"', 'j-key'],    [':', 'j-colon'],    [' "● open_to_remote"', 'j-bullet'], [',', 'j-comma'],
     ['  ', 'j-brace'],   ['"stack"', 'j-key'],     [':', 'j-colon'],    [' [', 'j-brace'],
-    ['    ', 'j-brace'], ['"PHP"', 'j-str'],        [',', 'j-comma'],   [' "Laravel"', 'j-str'],  [',', 'j-comma'],  [' "AWS"', 'j-str'],  [',', 'j-comma'],  [' "MySQL"', 'j-str'],
+    ['    ', 'j-brace'], ['"PHP"', 'j-str'],        [',', 'j-comma'],   [' "Laravel"', 'j-str'],  [',', 'j-comma'],  [' "Node.js"', 'j-str'],  [',', 'j-comma'],  [' "Vue"', 'j-str'],  [',', 'j-comma'],  [' "Python"', 'j-str'],  [',', 'j-comma'],  [' "AWS"', 'j-str'],
     ['  ', 'j-brace'],   [']', 'j-brace'],          [',', 'j-comma'],
     ['  ', 'j-brace'],   ['"experience_years"', 'j-key'], [':', 'j-colon'], [' 7', 'j-num'],    [',', 'j-comma'],
     ['  ', 'j-brace'],   ['"specialization"', 'j-key'],  [':', 'j-colon'], [' "Backend Systems"', 'j-str'], [',', 'j-comma'],
-    ['  ', 'j-brace'],   ['"location"', 'j-key'],  [':', 'j-colon'],    [' "Surat, Gujarat, IN"', 'j-str'],
+    ['  ', 'j-brace'],   ['"location"', 'j-key'],  [':', 'j-colon'],    [' "Bengaluru, Karnataka, IN"', 'j-str'],
     ['}', 'j-brace']
   ];
 
