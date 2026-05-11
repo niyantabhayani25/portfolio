@@ -1107,15 +1107,64 @@ button { font-family: inherit; }
   .section      { padding: 48px 20px; }
   .section-hero { padding: 24px 20px; min-height: calc(100vh - 78px); }
 
+  /* Fix 1 — hide scroll hint on mobile */
+  .hero-scroll-hint { display: none !important; }
+
+  /* Fix 2 — single-column hero, centered content */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .photo-window {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
   .hero-cta { flex-wrap: wrap; }
+
+  /* Fix 3 — stack tabs fit screen; stack viewer scrolls horizontally */
+  .stack-tabs {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .stack-tab {
+    flex: 1;
+    padding: 8px 8px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .stack-viewer {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 16px;
+  }
+
+  .jv-items { flex-wrap: nowrap; }
+
+  .jv-item {
+    white-space: nowrap;
+    min-width: 0;
+  }
+
+  .jv-item[data-tip]::after { display: none; }
+
+  /* Fix 4 — collapse fixed heights so no phantom whitespace */
+  #response-panel  { min-height: 0; }
+  .resp-section    { height: auto; min-height: 0; }
 
   .commit-hash { min-width: 0; }
 
   .fe-perms  { display: none; }
   .fe-col-perm { display: none; }
   .fe-body   { padding-left: 52px; }
-
-  .jv-item[data-tip]::after { display: none; }
 
   .sb-right { display: none; }
 }
