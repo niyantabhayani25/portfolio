@@ -413,6 +413,23 @@
     }
   });
 
+  /* ── Scroll hint — hide once user scrolls away from hero ── */
+  var scrollHint = document.querySelector('.hero-scroll-hint');
+  if (scrollHint) {
+    var scrollTarget = document.getElementById('right-panel') || window;
+    function onScrollHide() {
+      var scrolled = (scrollTarget === window)
+        ? window.scrollY
+        : scrollTarget.scrollTop;
+      if (scrolled > 80) {
+        scrollHint.style.opacity = '0';
+        scrollHint.style.pointerEvents = 'none';
+        scrollTarget.removeEventListener('scroll', onScrollHide, { passive: true });
+      }
+    }
+    scrollTarget.addEventListener('scroll', onScrollHide, { passive: true });
+  }
+
   /* ── Initialise to home section ─────────────────────────── */
   switchSection(DEFAULT_SECTION);
 

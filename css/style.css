@@ -1252,6 +1252,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 @media (max-width: 768px) {
   body { overflow: auto; }
 
+  /* ── Layout ──────────────────────────────────────────── */
   #app {
     flex-direction: column;
     height: auto;
@@ -1274,6 +1275,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     min-height: calc(100vh - var(--topbar-h) - var(--bottombar-h));
   }
 
+  /* ── Tabs & URL bar ──────────────────────────────────── */
   #tab-bar { overflow-x: auto; }
   .req-tab { min-width: 100px; }
   .tab-close-btn { display: none; }
@@ -1286,6 +1288,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   #sub-tabs { overflow-x: auto; padding: 0 8px; }
   .subtab { padding: 0 10px; font-size: 11px; }
 
+  /* ── Content & response panels ───────────────────────── */
   #content-area { height: 160px; }
 
   .resp-toolbar { flex-wrap: wrap; height: auto; padding: 6px 10px; gap: 6px; }
@@ -1293,25 +1296,86 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .resp-status-area { margin-left: 0; }
   .resp-size { display: none; }
 
-  #response-panel { min-height: 300px; }
+  /* response panel — auto height, no forced large min-height */
+  #response-panel { min-height: 0; }
 
-  .about-resp-grid { grid-template-columns: 1fr; }
+  /* resp-section should not force full viewport height — let content determine height */
+  .resp-section { height: auto; }
+  .resp-section.active { height: auto; min-height: 0; }
+
+  /* tighten padding on response body so content doesn't feel cut off */
+  .resp-tab-content { padding: 12px; }
+
+  /* ── Scroll hint — hide on mobile (fixed-position element
+        overlaps CTAs at small viewports) ─────────────────── */
+  .hero-scroll-hint { display: none !important; }
+
+  /* ── About section ───────────────────────────────────── */
+  .about-resp-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0;
+  }
+
+  /* constrain photo so it doesn't stretch full width */
+  .photo-window { max-width: 240px; margin: 0 auto; }
+
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
 
-  .rh-row { grid-template-columns: 160px 1fr; }
-  .rh-desc { display: none; }
+  /* ── composer.json / Stack viewer ───────────────────────
+     Prevent long package names from breaking out of the card.
+     The viewer scrolls horizontally inside its bounds.         */
+  .stack-viewer {
+    padding: 10px 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
+  /* disable hover tooltip on touch — it causes overflow */
+  .jv-item[data-tip]::after { display: none; }
+
+  /* each item stays on one line but lets the row scroll */
+  .jv-item {
+    flex-wrap: nowrap;
+    min-width: 0;
+    white-space: nowrap;
+  }
+
+  .jv-items { padding-left: 12px; }
+  .jv-indent { padding-left: 12px; }
+
+  /* ── Git log (experience) ────────────────────────────── */
   .commit-company { display: none; }
   .commit-ref     { display: none; }
 
+  /* ── Response headers ────────────────────────────────── */
+  .rh-row { grid-template-columns: 160px 1fr; }
+  .rh-desc { display: none; }
+
+  /* ── Domains file explorer ───────────────────────────── */
   .fe-perms { display: none; }
   .fe-header-row { grid-template-columns: 1fr auto; }
 
+  /* ── Topbar ──────────────────────────────────────────── */
   .tb-search { display: none; }
   .tb-ghost-btn { display: none; }
   .tb-nav { display: none; }
 
+  /* ── Bottom bar ──────────────────────────────────────── */
   .bb-right span:not(.bb-online-dot):not(:nth-child(2)) { display: none; }
+
+  /* ── JSON home response ──────────────────────────────── */
+  .json-response {
+    font-size: 12px;
+    word-break: break-word;
+    white-space: pre-wrap;
+  }
+
+  /* ── About CTAs ──────────────────────────────────────── */
+  .about-cta { justify-content: center; }
+
+  /* ── Recognition / verified.json ────────────────────── */
+  .rv-note { display: none; }
 }
 
 @media (max-width: 480px) {
@@ -1320,4 +1384,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .tb-accent-btn span { display: none; }
   #sub-tabs .subtab { font-size: 10px; padding: 0 8px; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* even tighter padding at very small screens */
+  .resp-tab-content { padding: 8px; }
+  .stack-viewer { padding: 8px; }
+  .jv-items { padding-left: 8px; }
+  .jv-indent { padding-left: 8px; }
+  .git-log { padding: 6px 0; }
+  .stack-tabs .stack-tab { padding: 6px 10px; font-size: 11px; }
 }
